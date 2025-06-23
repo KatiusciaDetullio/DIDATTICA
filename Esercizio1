@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESERCIZIO 1 Collegamenti ipertestuali</title>
+    
+">
+</head>
+<body>
+    <h1>ESERCIZIO 1 Collegamenti ipertestuali</h1>
+    <P>Dopo aver accerchiato e distrutto un'intera armata austriaca durante la <a href="https://it.wikipedia.org/wiki/Campagna_di_Ulma" target="_new"> campagna di Ulma</a>, le forzi <br>
+    francesi occuparono <a href="https://it.wikipedia.org/wiki/Vienna" target="_new">Vienna</a> l'11 novembre 1805. Gli austriaci riuscirono a evitare ulteriori <br>
+    combattimenti fino all'arrivo dei rinforzi russi. Napoleone necessitava di una vittoria decisiva, e per <br>
+    attirare gli avversari sul terreno di battaglia da lui scelto nei pressi di Austerlitz, finse di trovarsi in <br>
+    difficoltà facendo ripiegare le sue avanguardie e indebolendo deliberatamente il suo fianco destro. I <br>
+    generali austro-russi concentrarono la maggior parte delle forze contro la destra francese, sguarnendo <br>   
+    pericolosamente il centro del loro fronte, che subì il violento attacco di sorpresa del IV Corpo del <br>
+    <a href="https://it.wikipedia.org/wiki/Nicolas_Jean-de-Dieu_Soult" target="_new">Maresciallo Nicolas Jean-de-Dieu Soult</a>. Dopo il crolle del centro nemico, i francesi popterono <br>
+    sbaragliare entrambi i fianchi dello schieramento nemico e costrinsero gli alleati ad una fuga <br>
+    disordinata, catturando migliaia di prigionieri.</P>
+    
+</body>
+</html>
