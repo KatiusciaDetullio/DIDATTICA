@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tadella</title>
+  <style> table, th, td {border: 1px solid #bec6d5; border-collapse: collapse;}
+    .colore{color:#ffffff}
+    .colore{background-color: #be8f01;}
+    .riga{background-color: #fee799;}
+    h1 {color: darkred;}
+  </style>
+
+</head>
+
+<body>
+<h1 align="center">Tabella</h1>
+<table width="100%" >
+
+   <thead>
+    
+    <tr class="colore">
+     <th>ALBERGO</th><th>REGIONE</th><th>STELLE</th><th>COSTO CAMERA</th>
+    </tr>
+   </thead>
+
+   <tbody>
+     <tr class="riga">
+       <td align="left">Aristeo</td>
+       <td align="left">Emilia Romagna</td>
+       <td align="center">1</td>
+       <td align="center">76,00 €</td>
+     </tr>
+     <tr>
+       <td align="left">L'essenza</td>
+       <td align="left">Lombardia</td>
+       <td align="center">2</td>
+       <td align="center">87,00 €</td>
+     </tr>
+     <tr class="riga">
+       <td  align="left">Sara</td>
+       <td align="left">Lombardia</td>
+       <td align="center">4</td>
+       <td align="center">142,00 €</td>
+     </tr>
+     <tr>
+       <td align="left">Grand hotel</td>
+       <td align="left">Emilia Romagna</td>
+       <td align="center">5</td>
+       <td align="center">280,00 €</td>
+     </tr>
+     <tr class="riga">
+       <td align="left">Capriccio</td>
+       <td align="left">Calabria</td>
+       <td align="center">4</td>
+       <td align="center">155,00 €</td>
+     </tr>
+     <tr>
+       <td align="left">Ambassador</td>
+       <td align="left">Calabria</td>
+       <td align="center">2</td>
+       <td align="center">84,00 €</td>
+     </tr>
+     <tr class="riga">
+       <td align="left">Aster</td>
+       <td align="left">Emilia Romagna</td>
+       <td align="center">3</td>
+       <td  align="center">134,00 €</td>
+     </tr>
+     <tr>
+       <td align="left">Jazz</td>
+       <td align="left">Sardegna</td>
+       <td align="center">3</td>
+       <td align="center">134,00 €</td>
+     </tr>
+    
+   </tbody>
+
+</table>
+
+
+</body>
+</html>
