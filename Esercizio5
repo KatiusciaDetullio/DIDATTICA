@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family:libertinus ;
+            src: url(font/LibertinusSans-Italic.ttf);
+        }
+        @font-face {
+            font-family:montserrat;
+            src: url(font/Montserrat-VariableFont_wght.ttf);
+        }
+        * {box-sizing: border-box; 
+          }
+        body { padding: 0px;
+                margin: 0px;
+             }
+        h2 {text-align: center;
+            font-family:libertinus;
+        
+           }  
+        p {font-family:montserrat;
+          }
+        button {background-color: rgb(36, 140, 224);
+                color: white;
+                
+        }
+        .contenitore-grande {background-image: radial-gradient(rgba(1, 26, 32, 0.336), rgb(238, 252, 247));
+                             overflow:auto;
+                             gap: 10px;
+                             padding: 10px;
+        
+        }
+        .blocco1 { 
+                   overflow: auto;
+                   display: flex;
+                   gap: 20px; 
+                   padding:10px;
+                      
+                                       
+                 }     
+            .scatola1 {
+                       text-align: center;
+                       border-width: 15px;
+                       padding: 10px;
+                       flex: 2px; 
+                       border-radius: 5%;
+                      }
+            .scatola2 {background-color: white;
+                       text-align: center;
+                       padding: 10px;
+                       flex: 2px; 
+                       border-radius: 5%;
+                      } 
+        .blocco2  { 
+                   overflow: auto;
+                   display: flex;
+                   gap: 20px;
+                   padding: 10px;
+                  }                     
+
+    </style>
+
+
+</head>
+<body>
+    <div class="contenitore-grande">
+        <div class="blocco1">
+            <div class="scatola1" style= "background-image: linear-gradient(300deg, white 65%, rgba(1, 26, 32, 0.336))">
+                <h2>DEPURATORI D'ACQUA</h2>
+                <p>Acqa liscia, frizzante, fredda <br> e temperatura ambiente <br> 
+                    <a href="esercizio5-pagina di collegamento.html" target="new">
+                        <button style="border-radius: 10px;">Scopri di più
+                        </button>
+                    </a>
+                </p>
+            
+                <img src="immagini/depuratore-acqua.jpg" width="30%" height="180px" alt="depuratore-acqua">
+
+            </div>
+            <div class="scatola2" style= "background-image: linear-gradient(60deg, white 65%, rgba(1, 26, 32, 0.336))">
+                <h2>MISCELATORI </h2>
+                <p> Diversi modelli e colori <br>
+                in base alle proprie esigenze <br>  
+                    <a href="esercizio5-pagina di collegamento.html" target="new">
+                        <button style="border-radius: 10px;">Scopri di più
+                        </button>
+                    </a>
+                </p> 
+           
+                <img src="immagini/mix-acciaio.jpg" width="30%" height="180px" alt="mix-acciaio">
+
+            </div>
+
+        </div>
+        <div class="blocco2">
+            <div class="scatola1" style= "background-image: linear-gradient(237deg, white 65%, rgba(1, 26, 32, 0.336))">
+                <h2> ADDOLCITORI</h2>
+                <p>
+                    <a href="esercizio5-pagina di collegamento.html" target="new">
+                        <button style="border-radius: 10px;">Scopri di più
+                        </button>
+                    </a>
+                </p>    
+                <img src="immagini/addolcitore.jpg" width="30%" height="180px" alt="addolcitore">
+
+            </div>
+            <div class="scatola2" style= "background-image: linear-gradient(122deg, white 65%, rgba(1, 26, 32, 0.336))" >
+                <h2>FILTRI AI CARBONI ATTIVI</h2>
+                <p> 
+                    <a href="esercizio5-pagina di collegamento.html" target="new">
+                        <button style="border-radius: 10px;">Scopri di più
+                        </button>
+                    </a>
+                </p>
+                <img src="immagini/filtri.jpg" width="30%" height="180px" alt="filtri">
+
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
