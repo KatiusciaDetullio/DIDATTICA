@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiori e Colori</title>
+    <style>
+        /*importazione carattere*/
+        @font-face {
+            font-family:corsivo ;
+            src: url(font/Courgette-Regular.ttf);
+        }
+       
+        /* reset CSS*/
+        * {box-sizing: border-box; 
+          }
+        body { padding: 0px;
+                margin: 0px;
+             }
+        /* fine reset CSS*/     
+        h2 {text-align: center;
+            font-family:corsivo;
+            color: crimson;
+        
+           }  
+        
+        button {background-image: radial-gradient(rgb(208, 245, 208) 30%, rgb(245, 201, 207) );
+                color: rgb(121, 3, 91);
+                border-radius: 10px;
+                border-color: goldenrod;
+                
+        }
+        /* modifica del titolo*/
+        h1 {
+            text-align: center;
+            font-family: corsivo;
+            font-size:500%;
+            background-image: linear-gradient(rgb(245, 177, 189) 30%, rgb(169, 241, 169));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: rgb(180, 101, 117);
+            
+        }
+        img { border: 5px groove rgb(180, 101, 117);
+              width: 100%;
+              height: auto;
+              display: block;
+    }
+        .contenitore1 {overflow:auto;
+                       flex-direction: column;                     
+                       gap: 10px;
+                       padding: 10px;
+                       background-image: url(immagini/fiorisfondo1.jpg);
+                       background-size: 100% 100%;
+        }
+        
+        .box1 { 
+                   overflow: auto;
+                   display: flex;
+                   gap: 20px; 
+                   padding:10px;
+                   background-color: transparent;
+                   
+                      
+                                       
+        }     
+            .scatola1{ text-align: center;
+                       padding: 10px;
+                       flex: 2; 
+                       border:5px groove goldenrod;
+                       background-color: transparent;
+                       
+                       
+                      
+            }
+            .scatola2 {text-align: center;
+                       padding: 10px;
+                       flex: 2; 
+                       border:5px groove goldenrod;
+                       background-color: transparent;
+                      
+                      
+            }           
+        .box2  { 
+                   overflow: auto;
+                   display: flex;
+                   gap: 20px;
+                   padding: 10px;
+                   background-color: transparent;
+        }
+
+        /* disciplino la pagina per schermi non più grandi di (380px)*/          
+        @media only screen and (max-width:381px){
+
+            .contenitore1 {
+                flex-direction: column;
+            }           
+            .box1 {
+                flex-direction: column;
+            }
+            .box2 {
+                flex-direction: column;
+            }   
+           /* .scatola1 {
+                flex-direction: column;
+            }     
+            .scatola2 {
+                object-fit: contain;
+            }    
+            .img-cont {
+                object-fit: contain;
+            }*/
+        } 
+        /* cambio immagine al passaggio del mouse*/
+         .img-cont {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            
+                    
+            
+         }
+         .img-cont img {
+           
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+         }
+         .img-cont img:nth-child(2) {
+            opacity:0;
+         }
+         .img-cont:hover img:nth-child(1){
+            opacity:0;
+         }
+         .img-cont:hover img:nth-child(2){
+            opacity:1;
+         }
+        
+    </style>
+
+
+</head>
+<body>
+    <div class="contenitore1">
+        <h1 class="titolo">Fiori e Colori</h1>
+
+        <div class="box1">
+            <div class="scatola1">
+                <h2>Rose <br>             
+                    <button>Crea la tua composizione
+                    </button>  
+                </h2> 
+                <div class="img-cont">
+                    <img class="immagine1" src="immagini/rosabianca.jpg" alt="Rosa"> <img class="immagine2" src="immagini/rose.jpg" alt="mazzo di rose">
+                </div>
+
+            </div>
+            <div class="scatola2">
+                <h2> Gerbere <br>             
+                    <button>Crea la tua composizione
+                    </button>  
+                </h2>
+                <div class="img-cont">
+                    <img src="immagini/gerbererosse.jpg" alt="Gerbere"> <img src="immagini/gerbere-mix.jpg" alt="gerbere-mix">                    
+            
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="scatola1">
+                <h2> Peonie <br>             
+                    <button>Crea la tua composizione
+                    </button>  
+                </h2>
+                <div class="img-cont">
+                    <img src="immagini/peoniarosa.jpg" alt="peoniarosa"> <img src="immagini/peonie.jpg" alt="peonie">
+                </div>
+              
+            </div>
+            <div class="scatola2">
+                <h2> Tulipani<br>             
+                    <button>Crea la tua composizione
+                    </button>  
+                </h2>
+                <div class="img-cont">
+                    <img src="immagini/tulipani.jpg" alt="Tulipani"> <img src="immagini/tulipanimix.jpg" alt="tulipanimix">
+                </div>    
+
+            </div>
+
+        </div>
+    
+    </div>
+</body>
+</html>
