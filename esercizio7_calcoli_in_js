@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcoli in JS</title>
+</head>
+<body>
+  <h1>Calcola l'area del quadrato:</h1>
+<script>
+  //calcolo l'area del quadrato    
+  var lato = Number(prompt("inserisci il lato del quadrato in cm",""));
+  function area(){
+    var area_quadrato = lato * lato;
+    return area_quadrato;
+  }
+  //output
+  document.write("l'area misura:" + area() + " cm²");
+
+</script>
+
+
+<!--CERCHIO-->
+    <h1>Calcola l'area del cerchio:</h1>
+<script>
+  //calcolo l'area del cerchio   
+  var raggio = Number(prompt("inserisci la misura del raggio in cm",""));
+  var pgreca = Number(3,1415);
+  function area_c(){
+    var area_cerchio =(raggio * raggio)* pgreca;
+    return area_cerchio;
+  }
+  //output
+  document.write("l'area misura:" + area_c() + " cm²");
+
+</script>
+
+
+<!--TRIANGOLO-->
+   <h1>Calcola il perimetro del triangolo:</h1>
+<script>
+  //calcolo il perimetro del triangolo  
+  var lato_A = Number(prompt("inserisci la misura del lato A del triangolo in cm",""));
+  var Lato_B = Number(prompt("inserisci la misura del lato B del triangolo in cm",""));
+  var lato_C = Number(prompt("inserisci la misura del lato C del triangolo in cm",""));
+  function perimetro_t(){
+    var perimetro_triangolo =lato_A + Lato_B + lato_C;
+    return perimetro_triangolo;
+  }
+  //output
+  document.write("il perimetro misura:" + perimetro_t() + " cm");
+
+</script>
+
+
+<!--RETTANGOLO-->
+   <h1>Calcola il perimetro del rettangolo:</h1>
+<script>
+  //calcolo il perimetro del rettangolo  
+  var base = Number(prompt("inserisci la base del rettangolo in cm",""));
+  var altezza = Number(prompt("inserisci l'altezza del rettangolo in cm",""));
+  
+  function perimetro_r(){
+    var perimetro_rettangolo =(base + altezza) * 2;
+    return perimetro_rettangolo;
+  }
+  //output
+  document.write("il perimetro misura:" + perimetro_r() + " cm");
+
+</script>
+
+
+<!-- AREA RETTANGOLO-->
+   <h1>Calcola l'area del rettangolo:</h1>
+<script>
+  //calcolo l'area del rettangolo  
+  var base = Number(prompt("calcolo area rettangolo: inserisci la base",""));
+  var altezza = Number(prompt("calcolo area rettangolo: inserisci l'altezza in cm",""));
+  
+  function area_r(){
+    var area_rettangolo =(base * altezza);
+    return area_rettangolo;
+  }
+  //output
+  document.write("l'area misura:" + area_r() + " cm²");
+
+</script>
+
+
+<!-- AREA ROMBO-->
+   <h1>Calcola l'area del rombo:</h1>
+<script>
+  //calcolo l'area del rombo  
+  var diag_mag = Number(prompt("inserisci la diagonale maggiore del rombo in cm",""));
+  var diag_min = Number(prompt("inserisci la diagonale minore del rombo in cm",""));
+  
+  function area_rombo(){
+    var area_rombo =(diag_mag * diag_min)/2;
+    return area_rombo;
+  }
+  //output
+  document.write("l'area misura:" + area_rombo() + " cm²");
+
+</script>
+
+
+
+    
+</body>
+</html>
