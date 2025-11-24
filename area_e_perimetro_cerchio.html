@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area e perimetro del cerchio</title>
+</head>
+<body>
+<h1>Calcolo area e perimetro del Cerchio</h1>
+<p id="uno"></p>
+<p id="due"></p>
+ <script>
+    //calcolo l'area del cerchio   
+  var raggio;
+  raggio = Number(prompt("inserisci la misura del raggio in cm",""));
+  const pgreco = Number(3.14);
+  var area = (raggio * raggio)* pgreco;
+  var perimetro = (raggio*2)* pgreco;
+  document.getElementById("uno").innerHTML = "L' area del cerchio è la seguente: "+ area.toFixed(2) + "cm";
+  document.getElementById("due").innerHTML = "Il perimetro del cerchio è il seguente: "+ perimetro.toFixed(2) + "cm";
+  
+ </script>
+</body>
+</html>

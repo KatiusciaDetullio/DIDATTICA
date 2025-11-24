@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area e perimetro di un pentagono</title>
+</head>
+<body>
+<h1>Calcolo area e perimetro del Pentagono</h1>
+<p id="uno"></p>
+<p id="due"></p>
+ <script>
+    //calcolo l'area del pentagono 
+  var lato = Number(prompt("inserisci la misura della base in cm",""));
+  const costante = 1.72;
+  var area = (Math.pow (lato, 2)) * costante;
+  var perimetro = lato * 5;
+  document.getElementById("uno").innerHTML = "L' area del pentagono è la seguente: "+ area.toFixed(2) + "cm";
+  document.getElementById("due").innerHTML = "Il perimetro del pentagono è il seguente: "+ perimetro.toFixed(2) + "cm";
+  
+ </script>
+</body>
+</html>

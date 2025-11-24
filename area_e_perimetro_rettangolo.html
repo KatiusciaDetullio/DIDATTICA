@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area e perimetro del rettangolo</title>
+</head>
+<body>
+<h1>Calcolo area e perimetro del Rettangolo</h1>
+<p id="uno"></p>
+<p id="due"></p>
+ <script>
+    //calcolo l'area del rettangolo   
+  var base = Number(prompt("inserisci la misura della base in cm",""));
+  var altezza = Number(prompt("inserisci la misura dell' altezza in cm",""));
+  var area = (base * altezza);
+  var perimetro = (base + altezza)* 2;
+  document.getElementById("uno").innerHTML = "L' area del retangolo è la seguente: "+ area.toFixed(2) + "cm";
+  document.getElementById("due").innerHTML = "Il perimetro del rettangolo è il seguente: "+ perimetro.toFixed(2) + "cm";
+  
+ </script>
+</body>
+</html>

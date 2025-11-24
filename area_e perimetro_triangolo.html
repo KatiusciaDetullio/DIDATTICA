@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area e perimetro del triangolo</title>
+</head>
+<body>
+  <h1>Calcolo area e perimetro del Triangolo</h1>
+<p id="uno"></p>
+<p id="due"></p>
+ <script>
+    //calcolo l'area del triangolo   
+  var lato = Number(prompt("inserisci la misura del lato in cm",""));
+  const area = (Math.sqrt(3)/ 4) * Math.pow (lato, 2);
+  var perimetro = lato * 3;
+  document.getElementById("uno").innerHTML = "L' area del triangolo è la seguente: "+ area.toFixed(2) + "cm";
+  document.getElementById("due").innerHTML = "Il perimetro del triangolo è il seguente: "+ perimetro.toFixed(2) + "cm";
+  
+ </script>  
+</body>
+</html>
