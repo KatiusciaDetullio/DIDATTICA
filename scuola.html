@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {  background-image: url(https://images.unsplash.com/photo-1537495329792-41ae41ad3bf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxpYnJpJTIwc2NvbGFzdGljaXxlbnwwfHwwfHx8MA%3D%3D);
+                background-repeat: no-repeat;
+                background-position:center;
+                background-size: cover;
+        }
+       
+         h1 {   color: rgb(21, 30, 32);
+                text-align: center;
+                font-size: xx-large;border: 2px groove rgb(1, 26, 34);
+                background-color: rgb(167, 180, 255);
+
+            
+        }
+        p {font-size: x-large;
+
+        }
+        .class { width: 100%;
+                 height:100%;   
+                 background-size: cover;
+                 
+        }
+        .selezione {color: white;
+                    font-size: x-large;
+        }
+        #scrivi { color:rgb(2, 7, 36);
+                  background-color: rgb(201, 195, 224);
+
+        }
+
+        
+    </style>
+
+
+
+
+</head>
+<body>
+   <h1>Percorso di studi</h1>
+    <label class="selezione"> Scrivi l'indirizzo scelto</label>
+    <input type="text" id="indirizzodistudio">
+    <input type="submit" onclick="studio()">
+
+    <p id="scrivi"></p>
+   
+    <script>
+        function studio(){
+            var facolta = (indirizzodistudio.value);
+            //nuova variabile per rimuovere eventuali spazi erroneamente messi 
+            var facoltanew = facolta.trim();
+
+            switch (facoltanew) {
+                //condizione 1
+                case "informatica":
+                    scrivi.innerHTML = "Software e Hardware per te non avranno più segreti ";                   
+                break;
+                // interruzione delle operazioni
+                case "legge":
+                    scrivi.innerHTML = "Finalmente giustizia sarà fatta";                
+                break;
+                // interruzione delle operazioni 
+                case "alberghiero":
+                    scrivi.innerHTML = "Tutto il mondo conoscerà i tuoi manicaretti";                  
+                break;
+                case "ingegneria":
+                    scrivi.innerHTML = "Vedremo invenzioni rivoluzionarie";                    
+                break;
+                case "matematica":
+                    scrivi.innerHTML = "Diventerai il re del calcolo";
+                break;                        
+                default:
+                //operazione da svolgere se si verifica la condizione
+                    scrivi.innerHTML = "MI DISPIACE, CI DEVE ESSERE UN ERRORE!!!";                    
+                break;
+                //interruzione delle operazioni    
+
+            }
+
+
+        }
+
+
+
+    </script>  
+</body>
+</html>
